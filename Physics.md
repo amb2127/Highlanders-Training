@@ -5,8 +5,6 @@ physics is still extremely important in understanding the laws that govern how y
 Whether you want to do physics simulation for a subsystem or get an idea of what the optimal performance 
 for your robot looks like, physics is essential to know and get at least a tiny grasp on. 
 
-This document assumes you have basic understanding of SI prefixes and unit symbols.
-
 # TODO: add pictures
 # Fundamental Units
 Doesn't cover everything possible, but this is most of what will be useful in FRC.
@@ -74,9 +72,9 @@ as fast as a $10kg$ object.
 Rotational analog of mass. The moment of inertia measures resistance to torque, or
 how much torque is needed for a desired angular acceleration. Picture it as the sum
 of mass times distance squared across the entire object. For example, if most of the
-weight is concentrated near the center of rotation, the MOI will be lower than if a
-majority of the mass was concentrated further away from the center of rotation, such
-as in a flywheel.
+mass of an object is concentrated near the center of rotation, the MOI will be lower 
+than if a majority of the mass in an object was concentrated further away from the 
+center of rotation, such as in a flywheel.
 
 <img src="Assets/Brass_Flywheel.webp" width="600">
 Note how most of the material is concentrated on the edge, in order to increase MOI.
@@ -85,8 +83,10 @@ Note how most of the material is concentrated on the edge, in order to increase 
 - #### Symbol: $\tau$ (tau)
 - #### SI Unit: newton meters ($N \cdot m$)
 Rotational analog of force. A torque can be thought of as a "twist" applied to an
-object that causes it to angularly accelerate. Torque relates to angular acceleration
-and MOI as force relates to linear acceleration and mass.
+object that causes it to accelerate angularly. Torque relates to angular acceleration
+and MOI as force relates to linear acceleration and mass. A point on an object with
+applied torque has linear force relative to its distance, following the equation
+$\tau = r \cdot F$.
 
 ### Current
 - #### Symbol: $I$ (why is this also $I$ please SI save me)
