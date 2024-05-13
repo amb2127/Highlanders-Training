@@ -78,8 +78,8 @@ weight is concentrated near the center of rotation, the MOI will be lower than i
 majority of the mass was concentrated further away from the center of rotation, such
 as in a flywheel.
 
-![A Flywheel](Assets/Brass_Flywheel.webp)
-<br>Note how most of the material is concentrated on the edge, in order to increase MOI.
+<img src="Assets/Brass_Flywheel.webp" width="600">
+Note how most of the material is concentrated on the edge, in order to increase MOI.
 
 ### Torque
 - #### Symbol: $\tau$ (tau)
