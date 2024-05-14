@@ -1,49 +1,52 @@
 # Physics
 
-Merely the name of it strikes fear in the hearts of students. Despite how bad it may seem, 
-physics is still extremely important in understanding the laws that govern how your robot moves.
-Whether you want to do physics simulation for a subsystem or get an idea of what the optimal performance 
-for your robot looks like, physics is essential to know and get at least a tiny grasp on. 
+While a full physics course is beyond the scope of this article, many basic concepts and principles
+are useful and broadly applicable in FRC. This page is a crash course on some common terms and concepts
+in the context of FRC robots. These concepts have many applications in simulation, optimizing performance,
+and understanding the behavior of robots.
 
-# TODO: add pictures
+*TODO: add pictures*
 # Fundamental Units
-Doesn't cover everything possible, but this is most of what will be useful in FRC.
+This section details some fundamental units that are commonplace in FRC.
 
-Please standardize on SI.
+We standardize on SI units for the sake of consistency. If you see an inch in our code, `Units::inchesToMeters`
+is waiting for you.
+<!--Java units library? maybe? probably not for now-->
 ## The ones you already know
-You should know most of these already, but a refresher is always helpful.
+You should already know most of these, but a refresher is always helpful.
 ### Time
 - #### Symbol: $t$
 - #### SI Unit: seconds ($s$)
-- #### Other Units: milliseconds ($ms$)
 look at ur clock idk
 
 ### Distance
 - #### Symbol: $d$
 - #### SI Unit: meters ($m$)
-- #### Other Units: inches ($in$), centimeters ($cm$), feet ($ft$)
-Linear distance between two points of interest.
+- #### Other Common Units: inches ($in$), feet ($ft$)
+The amount of separation between two points of interest.
 
 ### Mass
 - #### Symbol: $m$
 - #### SI Unit: kilograms ($kg$)
-- #### Other Units: pounds ($lb$)
+- #### Other Common Units: pounds ($lb$)
 Not the same as weight! Technically measures resistance to force.
 
 ### Velocity
 - #### Symbol: $v$
 - #### SI Unit: meters per second ($m/s$)
+- #### Other Common Units: feet per second ($ft/s$)
 Distance traveled over time.
 
 ### Acceleration
 - #### Symbol: $a$
 - #### SI Unit: meters per second squared ($m/s^2$)
+- #### Other Common Units: feet per second squared ($ft/s^2$)
 Velocity's change over time, as in meters per second, per second.
-### Angle 
 
+### Angle 
 - #### Symbol: $\theta$ (theta)
 - #### SI Unit: radians ($rad$)
-- #### Other Units: degrees ($\degree$), rotations
+- #### Other Common Units: degrees ($\degree$), rotations
 This isn't really a unit? SI is weird. Pick one and stick with it.
 Or use Rotation2d.
 
@@ -70,11 +73,7 @@ as fast as a $10kg$ object.
 - #### Symbol: $I$
 - #### SI Unit: kilogram meters squared ($kg \cdot m^2$)
 Rotational analog of mass. The moment of inertia measures resistance to torque, or
-how much torque is needed for a desired angular acceleration. Picture it as the sum
-of mass times distance squared across the entire object. For example, if most of the
-mass of an object is concentrated near the center of rotation, the MOI will be lower 
-than if a majority of the mass in an object was concentrated further away from the 
-center of rotation, such as in a flywheel.
+how much torque is needed for a desired angular acceleration.
 
 <img src="Assets/Brass_Flywheel.webp" width="600">
 Note how most of the material is concentrated on the edge, in order to increase MOI.
